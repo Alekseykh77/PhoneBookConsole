@@ -51,7 +51,7 @@ def open_file():
         Model.phonebook = contacts_list
 
 def search_surname():
-    surname = input("Введите фамилию или люыбе данные из ФИО: ")
+    surname = input("Введите фамилию или любые данные из ФИО: ")
     with open(Model.path, "r", encoding="UTF-8") as data:
         contacts_list = data.read().split("\n")
         Model.phonebook = contacts_list
