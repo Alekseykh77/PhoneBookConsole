@@ -70,7 +70,7 @@ def add_contact():
     surname = input('Введите фамилию: ')
     last_name = input('Введите отчество: ')
     phone = input('Введите телефон: ')
-    contact = f'{name}; {surname}; {last_name}; {phone};\n'
+    contact = f'{name}; {surname}; {last_name}; {phone};'
     Model.phonebook.append(contact)
     View.printPhoneBook()
 
@@ -88,5 +88,5 @@ def change_contact():
     print(contact)
     contact[choice2] = input('Введите новое значение: ')
     print(contact)
-    Model.phonebook.insert(choice, ';'.join(contact))
+    Model.phonebook.insert(choice, '; '.join(contact))
     View.printPhoneBook()
